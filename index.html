@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>sho.com</title>
+        <meta name="description" content="Simple http interface for url shortener service">
+        <meta name="author" content="Eloi Benvenuti">
+
+    </head>
+
+    <body>
+        <form method="POST" enctype="multipart/form-data" action="/results">
+            <h2>Describe your desired URL shortening</h2>
+            <label for="URL">URL:</label>
+            <input name="URL" id="URL" type="text" /><br>
+            <label for="SEO">SEO Keyword:</label>
+            <input name="SEO" id="SEO" type="text" /><br>
+            <label for="TTL">Desired time to live (in second):</label>
+            <input name="TTL" id="TTL" type="text" /><br>
+            <input type="submit" value="Submit" />
+        </form>
+        <!-- <script src="js/scripts.js"></script> -->
+    </body>
+</html>
+
